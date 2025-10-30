@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Theano+Didot&display=swap');
+
+/* Fuente Soria local */
+@font-face {
+  font-family: 'Soria';
+  src: url('Soria-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Theano Didot', serif;
+  margin: 0;
+  background: #b1bacb;
+  color: #bf7e81;
+}
+
+header {
+  background: #b1bacb;
+  color: #bf7e81;
+  padding: 20px 0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  width: 90px;
+  vertical-align: middle;
+}
+
+/* Título principal con fuente Soria */
+header h1, .logo-title {
+  font-family: 'Soria', serif;
+  letter-spacing: 2px;
+  font-size: 2.8em;
+}
+
+nav a {
+  margin: 0 20px;
+  color: #f5efeb;
+  text-decoration: none;
+  font-weight: bold; 
+  transition: color 0.2s;
+}
+nav a:hover {
+  color: #c97b63;
+}
+.destacado {
+  background: #ffe9ec;
+  padding: 20px;
+  text-align: center;
+}
+.foto-destacada {
+  max-width: 350px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px #ebd3c3;
+}
+section {
+  padding: 30px 10px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.productos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+.producto {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px #eedfd6;
+  width: 210px;
+  text-align: center;
+  padding: 18px 10px;
+  margin-bottom: 15px;
+}
+.producto img {
+  width: 170px;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 9px;
+  box-shadow: 0 1px 3px #e6b89c;
+}
+.precio {
+  display: block;
+  margin-top: 10px;
+  font-size: 1.1em;
+  color: #c97b63;
+  font-weight: bold;
+}
+footer {
+  background: #e6b89c;
+  color: #fff;
+  text-align: center;
+  padding: 12px 0;
+  margin-top: 40px;
+}
+@media (max-width: 700px) {
+  .productos {
+    flex-direction: column;
+    align-items: center;
+  }
+  .producto {
+    width: 90%;
+  }
+  .foto-destacada {
+    max-width: 95vw;
+  }
+}
